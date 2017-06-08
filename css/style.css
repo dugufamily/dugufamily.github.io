@@ -1,0 +1,175 @@
+      /*头部*/
+        .header-height {
+            background: #ffffff;
+            font-size: 16px;
+        }
+
+        .navbar-brand {
+            height: auto;
+        }
+        @media (min-width:768px) and (max-width:992px){
+            .navbar-header{
+                width: 336px;
+            }
+            .navbar-brand{
+                padding-top: 20px;
+            }
+        }
+        .navbar-right {
+            margin-top: 60px;
+        }
+        @media (max-width: 767px){
+            .navbar-right {
+                margin-top: 0px;
+            }
+            .navbar-btn{
+                margin-left: 15px;
+            }
+        }
+        .navbar-toggle{
+            margin-top: 38px;
+        }
+        /*内容*/
+        .content {
+            margin-top: 110px;
+            margin-bottom: 80px;
+        }
+
+        /*导航*/
+        .nav-height {
+            height: 100px;
+            background: #448cca;
+            border-color: #448cca;
+        } 
+
+        /*尾部*/
+        .nav-footer {
+            padding-top: 40px;
+            background: #448cca;
+            border-color: #448cca;
+            margin-bottom: 0px;
+            color: #ffffff;
+        }
+
+        .nav-footer dd {
+            line-height: 2
+        }
+
+        .footer-left-title {
+            margin-right: 44px;
+        }
+
+        .footer-left-body {
+            margin-bottom: 34px;
+        }
+
+        .footer-ico {
+            display: inline-block;
+            width: 34px;
+            height: 34px;
+            margin-top: -17px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin-left: 10px;
+        }
+
+        .ico_site {
+            background-image: url("../img/footer_site.png");
+        }
+
+        .ico_email {
+            background-image: url("../img/footer_email.png");
+        }
+
+        .footer-middle dt {
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        .footer-middle dd {
+            line-height: 2;
+        }
+
+        .footer-middle a {
+            color: #ffffff;
+        }
+
+        .footer-attention {
+            margin-top: 50px;
+        }
+
+        .footer-attention a {
+            margin-right: 8px;
+        } 
+
+        /*
+            内容
+        */
+        .cont-bg {
+            padding: 100px 0px 30px;
+            background: #448cca;
+            color: #ffffff;   
+        }
+        .cont-picbg {
+            padding: 60px 0;
+            background-image:url(../img/cont_bg.png); 
+            background-position: center right;
+            background-repeat: no-repeat;
+        }
+        .sta-right {
+            background-color: #fff;
+            width: 560px;
+            width: 100%;
+            height: 380px;
+            margin: 0 auto;
+        }
+        .countbox{
+             
+            /*width: 196px;*/
+            height: 156px;
+            
+            background-color: #f7f7f7;
+            position: relative;
+            
+             
+        }
+        .countbox h4 {
+            position: absolute;
+            width: 100%;
+            height: 36px;
+            line-height: 36px;
+            background-color: #00a0e9;
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
+            left: 0;
+            bottom: 0;
+            margin: 0
+        }
+        .count-add {
+            text-align: center;
+            color: #00a0e9;
+            line-height: 156px;
+            font-size: 42px;
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        .countcen {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .cen-tit {
+            background:#999999;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: #fff;
+            font-size:16px;
+            font-weight: normal;
+            margin: 0;
+        }
+        .orderbox {
+            background-color: #00a0e9;
+            height: 88px;
+        }
