@@ -1,3 +1,8 @@
+/*字体*/
+body {
+    font-family: "Microsoft YaHei";
+}
+
 /*头部*/
 .header-height {
     background: #ffffff;
@@ -7,28 +12,35 @@
 .navbar-brand {
     height: auto;
 }
-@media (min-width:768px) and (max-width:992px){
-    .navbar-header{
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .navbar-header {
         width: 336px;
     }
-    .navbar-brand{
+
+    .navbar-brand {
         padding-top: 20px;
     }
 }
+
 .navbar-right {
     margin-top: 60px;
 }
-@media (max-width: 767px){
+
+@media (max-width: 767px) {
     .navbar-right {
         margin-top: 0px;
     }
-    .navbar-btn{
+
+    .navbar-btn {
         margin-left: 15px;
     }
 }
-.navbar-toggle{
+
+.navbar-toggle {
     margin-top: 38px;
 }
+
 /*内容*/
 .content {
     margin-top: 110px;
@@ -41,6 +53,7 @@
     background: #448cca;
     border-color: #448cca;
 }
+
 /*面包屑导航*/
 .breadcrumb {
     background: transparent;
@@ -118,6 +131,7 @@
 .ico_mes {
     background-image: url("../img/side_mes.png");
 }
+
 /*尾部*/
 .nav-footer {
     padding-top: 40px;
@@ -178,8 +192,9 @@
 .footer-attention a {
     margin-right: 8px;
 }
+
 /*局部优化*/
-@media (max-width: 660px){
+@media (max-width: 660px) {
     .side_ico {
         display: none;
     }
