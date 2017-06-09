@@ -1,0 +1,57 @@
+/*信息表格*/
+.table {
+    border: 1px solid #e5e9ee;
+}
+
+.table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #e5e9ee;
+    color: #a7abb4;
+}
+
+.table td {
+    color: #a7abb4;
+}
+
+.table td:nth-child(2) a {
+    color: #2a2d2e;
+}
+
+.table td:nth-child(2) a:hover {
+    text-decoration: none;
+}
+
+.table label {
+    margin-bottom: 0px;
+}
+
+/*信息修改*/
+
+.infor_ico {
+    display: inline-block;
+    width: 30px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    vertical-align: middle;
+    margin-right: 16px;
+}
+
+.infor_company{
+    background-image: url("../img/infor_company.png");
+}
+.infor_code{
+    background-image: url("../img/infor_code.png");
+}
+.infor_address{
+    background-image: url("../img/infor_address.png");
+}
+.infor_email{
+    background-image: url("../img/infor_email.png");
+}
+.infor_call{
+    background-image: url("../img/infor_call.png");
+}
+.infor_tele{
+    background-image: url("../img/infor_tele.png");
+}
