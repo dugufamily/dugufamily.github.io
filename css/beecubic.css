@@ -104,3 +104,12 @@
 .mycount_exp{
     width: 110px;
 }
+
+
+.mycount_table>tbody>tr>td{
+    color: #2a2d2e;
+}
+.mycount_table .btn{
+    padding: 0px;
+    width: 86px;
+}
