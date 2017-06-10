@@ -90,155 +90,165 @@
             <div class="col-xs-9 col-md-10">
                 <div class="side_right">
                     <h4 class="side_right_title">未读消息</h4>
-                    <ul class="nav nav-tabs">
-                        <li role="presentation" class="active"><a href="#">全部消息</a></li>
-                        <li role="presentation"><a href="#">消息类型一</a></li>
-                        <li role="presentation"><a href="#">消息类型二</a></li>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">全部信息</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">其他类型</a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">其他类型</a></li>
                     </ul>
-                    <table class="table">
-                        <thead>
-                        <tr class="active">
-                            <th width="6%">
-                                <label>
-                                    <input type="checkbox">
-                                </label>
-                            </th>
-                            <th>标题内容</th>
-                            <th width="20%">提交时间</th>
-                            <th width="20%">类型</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <th scope="row">
-                                <label>
-                                    <input type="checkbox">
-                                </label>
-                            </th>
-                            <td><a href="#">您在京东还有待评价的商品哦，发表商品评价即可得京豆！</a></td>
-                            <td>2017-5-25 15:28:21</td>
-                            <td>活动消息-优惠活动</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <label>
-                                    <input type="checkbox">
-                                </label>
-                            </th>
-                            <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
-                            <td>2017-5-25 15:28:21</td>
-                            <td>活动消息-优惠活动</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <label>
-                                    <input type="checkbox">
-                                </label>
-                            </th>
-                            <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
-                            <td>2017-5-25 15:28:21</td>
-                            <td>活动消息-优惠活动</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <label>
-                                    <input type="checkbox">
-                                </label>
-                            </th>
-                            <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
-                            <td>2017-5-25 15:28:21</td>
-                            <td>活动消息-优惠活动</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <label>
-                                    <input type="checkbox">
-                                </label>
-                            </th>
-                            <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
-                            <td>2017-5-25 15:28:21</td>
-                            <td>活动消息-优惠活动</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <label>
-                                    <input type="checkbox">
-                                </label>
-                            </th>
-                            <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
-                            <td>2017-5-25 15:28:21</td>
-                            <td>活动消息-优惠活动</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <label>
-                                    <input type="checkbox">
-                                </label>
-                            </th>
-                            <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
-                            <td>2017-5-25 15:28:21</td>
-                            <td>活动消息-优惠活动</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <label>
-                                    <input type="checkbox">
-                                </label>
-                            </th>
-                            <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
-                            <td>2017-5-25 15:28:21</td>
-                            <td>活动消息-优惠活动</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <label>
-                                    <input type="checkbox">
-                                </label>
-                            </th>
-                            <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
-                            <td>2017-5-25 15:28:21</td>
-                            <td>活动消息-优惠活动</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <label>
-                                    <input type="checkbox">
-                                </label>
-                            </th>
-                            <td><a href="#">您的京东2017年4月月度账单 欢迎点击查看</a></td>
-                            <td>2017-5-25 15:28:21</td>
-                            <td>活动消息-优惠活动</td>
-                        </tr>
-                        </tbody>
-                        <tfoot>
-                        <tr>
-                            <th scope="row">
-                                <label>
-                                    <input type="checkbox">
-                                </label>
-                            </th>
-                            <td colspan="3">
-                                <button class="btn btn-default btn-xs" type="button" disabled="disabled">删除</button>
-                                <button class="btn btn-default btn-xs" type="button" disabled="disabled">标记已读</button>
-                                <button class="btn btn-default btn-xs" type="button">全部已读</button>
-                            </td>
-                        </tr>
-                        </tfoot>
-                    </table>
-                    <nav id="pagelist">
-                        <span>共有&nbsp;10&nbsp;条，每页显示:&nbsp;10&nbsp;条</span>
-                        <div class="laypage_main laypageskin_default pull-right" id="laypage_0">
-                            <span class="laypage_curr">1</span>
-                            <a href="javascript:;" data-page="2">2</a>
-                            <a href="javascript:;" data-page="3">3</a>
-                            <a href="javascript:;" data-page="4">4</a>
-                            <a href="javascript:;" data-page="5">5</a>
-                            <a href="javascript:;" data-page="6">6</a>
-                            <a href="javascript:;" data-page="7">7</a>
-                            <span>…</span>
-                            <a href="javascript:;" class="laypage_last" title="尾页" data-page="230">尾页</a>
-                            <a href="javascript:;" class="laypage_next" data-page="2">下一页</a></div>
-                    </nav>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <table class="table">
+                                <thead>
+                                <tr class="active">
+                                    <th width="6%">
+                                        <label>
+                                            <input type="checkbox">
+                                        </label>
+                                    </th>
+                                    <th>标题内容</th>
+                                    <th width="20%">提交时间</th>
+                                    <th width="20%">类型</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <label>
+                                            <input type="checkbox">
+                                        </label>
+                                    </th>
+                                    <td><a href="#">您在京东还有待评价的商品哦，发表商品评价即可得京豆！</a></td>
+                                    <td>2017-5-25 15:28:21</td>
+                                    <td>活动消息-优惠活动</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label>
+                                            <input type="checkbox">
+                                        </label>
+                                    </th>
+                                    <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
+                                    <td>2017-5-25 15:28:21</td>
+                                    <td>活动消息-优惠活动</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label>
+                                            <input type="checkbox">
+                                        </label>
+                                    </th>
+                                    <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
+                                    <td>2017-5-25 15:28:21</td>
+                                    <td>活动消息-优惠活动</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label>
+                                            <input type="checkbox">
+                                        </label>
+                                    </th>
+                                    <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
+                                    <td>2017-5-25 15:28:21</td>
+                                    <td>活动消息-优惠活动</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label>
+                                            <input type="checkbox">
+                                        </label>
+                                    </th>
+                                    <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
+                                    <td>2017-5-25 15:28:21</td>
+                                    <td>活动消息-优惠活动</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label>
+                                            <input type="checkbox">
+                                        </label>
+                                    </th>
+                                    <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
+                                    <td>2017-5-25 15:28:21</td>
+                                    <td>活动消息-优惠活动</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label>
+                                            <input type="checkbox">
+                                        </label>
+                                    </th>
+                                    <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
+                                    <td>2017-5-25 15:28:21</td>
+                                    <td>活动消息-优惠活动</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label>
+                                            <input type="checkbox">
+                                        </label>
+                                    </th>
+                                    <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
+                                    <td>2017-5-25 15:28:21</td>
+                                    <td>活动消息-优惠活动</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label>
+                                            <input type="checkbox">
+                                        </label>
+                                    </th>
+                                    <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
+                                    <td>2017-5-25 15:28:21</td>
+                                    <td>活动消息-优惠活动</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label>
+                                            <input type="checkbox">
+                                        </label>
+                                    </th>
+                                    <td><a href="#">您的京东2017年4月月度账单 欢迎点击查看</a></td>
+                                    <td>2017-5-25 15:28:21</td>
+                                    <td>活动消息-优惠活动</td>
+                                </tr>
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                    <th scope="row">
+                                        <label>
+                                            <input type="checkbox">
+                                        </label>
+                                    </th>
+                                    <td colspan="3">
+                                        <button class="btn btn-default btn-xs" type="button" disabled="disabled">删除</button>
+                                        <button class="btn btn-default btn-xs" type="button" disabled="disabled">标记已读</button>
+                                        <button class="btn btn-default btn-xs" type="button">全部已读</button>
+                                    </td>
+                                </tr>
+                                </tfoot>
+                            </table>
+                            <nav id="pagelist">
+                                <span>共有&nbsp;10&nbsp;条，每页显示:&nbsp;10&nbsp;条</span>
+                                <div class="laypage_main laypageskin_default pull-right" id="laypage_0">
+                                    <span class="laypage_curr">1</span>
+                                    <a href="javascript:;" data-page="2">2</a>
+                                    <a href="javascript:;" data-page="3">3</a>
+                                    <a href="javascript:;" data-page="4">4</a>
+                                    <a href="javascript:;" data-page="5">5</a>
+                                    <a href="javascript:;" data-page="6">6</a>
+                                    <a href="javascript:;" data-page="7">7</a>
+                                    <span>…</span>
+                                    <a href="javascript:;" class="laypage_last" title="尾页" data-page="230">尾页</a>
+                                    <a href="javascript:;" class="laypage_next" data-page="2">下一页</a></div>
+                            </nav>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="profile">
+                            ...
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="messages">
+                            ...
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

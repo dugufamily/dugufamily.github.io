@@ -26,6 +26,12 @@
 }
 
 /*信息修改*/
+.form-horizontal .infor {
+    line-height: 34px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    font-weight: normal;
+}
 
 .infor_ico {
     display: inline-block;
@@ -37,27 +43,64 @@
     margin-right: 16px;
 }
 
-.infor_company{
+.infor_company {
     background-image: url("../img/infor_company.png");
 }
-.infor_code{
+
+.infor_code {
     background-image: url("../img/infor_code.png");
 }
-.infor_address{
+
+.infor_address {
     background-image: url("../img/infor_address.png");
 }
-.infor_email{
+
+.infor_email {
     background-image: url("../img/infor_email.png");
 }
-.infor_call{
+
+.infor_call {
     background-image: url("../img/infor_call.png");
 }
-.infor_tele{
+
+.infor_tele {
     background-image: url("../img/infor_tele.png");
 }
-.infor_user{
+
+.infor_user {
     background-image: url("../img/infor_user.png");
 }
-.infor_link{
+
+.infor_link {
     background-image: url("../img/infor_link.png");
+}
+/*资金账户*/
+.well{
+    margin-top: 50px;
+    overflow: hidden;
+}
+.mycount_money{
+    color: #3399cc;
+}
+.mycount_left{
+    color: #009900;
+}
+.mycount_left:after,.mycount_right:after{
+    color: #666666;
+    font-size: 14px;
+    content:"RMB";
+}
+.mycount_right{
+    color: #cc6600;
+}
+.mycount{
+    margin: 0px;
+    margin-top: 14px;
+}
+
+#mycount_more{
+    margin-top: 20px;
+}
+.mycount_exp{
+    width: 110px;
 }
