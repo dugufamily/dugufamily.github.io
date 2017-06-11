@@ -146,11 +146,77 @@
 }
 
 li a.type_active, li a.style_active {
-    /*color: #448cca;*/
-    /*border: 1px solid #448cca;*/
     padding: 0 8px;
     border-radius: 3px;
-
     background: #448cca;
     color: #ffffff;
+}
+
+.collect_list{
+    overflow: hidden;
+}
+
+.collect_list li{
+    float: left;
+    margin-bottom: 18px;
+    margin-right: 14px;
+    width: 140px;
+}
+.collect_img{
+    margin-bottom: 10px;
+}
+
+.collect_img img{
+    width: 140px;
+    height: 100px;
+    border: 1px solid #e5e9ee;
+}
+
+.collect_title{
+    height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.collect_title a{
+    color:#3c3c3c;
+    text-decoration: none;
+}
+.collect_body{
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.collect_pay{
+    display: inline-block;
+    color: #ff4400;
+    margin-right: 2px;
+}
+.collect_cost{
+    display: inline-block;
+    color: #9c9c9c;
+    text-decoration: line-through;
+}
+
+.collect_type{
+    display: inline-block;
+    color: #ffffff;
+    border-radius: 50%;
+    background: #f9b800;
+    padding: 0px 3px;
+    font-weight: bold;
+    margin-right: 2px;
+}
+.type_c{
+    background: #f9b800;
+}
+.type_b{
+    background: #ea2e23;
+}
+.type_j{
+    background: #15c3b4;
+}
+.cash_padding{
+    padding-right: 2px;
 }
