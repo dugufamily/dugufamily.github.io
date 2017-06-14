@@ -4,12 +4,312 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>未读消息</title>
+    <title>首页</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/beecubic.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <style>
+        .item {
+            height: 100%;
+        }
+
+        .item img {
+            width: 100%;
+            height: 100% !important;
+        }
+
+        .navbar h2 {
+            line-height: 100px;
+            color: #ffffff;
+            margin: 0px;
+        }
+
+        section {
+            padding: 0 100px;
+        }
+
+        .middle_page {
+            border-bottom: 1px solid #e7e7e7;
+            text-align: center;
+        }
+
+        .middle_page_title {
+            margin-top: 50px;
+            padding-bottom: 20px;
+        }
+
+        .middle_page_title p {
+            margin-top: 40px;
+            font-size: 16px;
+            letter-spacing: 6px;
+        }
+
+        .page_wrap {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .middle_title {
+            color: #0099ff;
+            margin-top: 0px;
+            margin-bottom: 18px;
+            line-height: 1.4;
+        }
+
+        .page_wrap p {
+            font-size: 16px;
+            line-height: 32px;
+        }
+
+        .middle0_wrap {
+            margin-top: 80px;
+            margin-bottom: 20px;
+        }
+
+        .middle0_left {
+            float: left;
+            background: url("img/middle_first.png") no-repeat;
+            width: 442px;
+            height: 377px;
+        }
+
+        .middle0_right {
+            float: right;
+            margin-top: 110px;
+            margin-left: 230px;
+        }
+
+        .middle1_wrap {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .middle1_left {
+            background: url("img/map.png") no-repeat;
+            width: 570px;
+            height: 420px;
+            float: left;
+        }
+
+        .middle1_right {
+            float: right;
+            margin-top: 119px;
+            margin-left: 50px;
+        }
+
+        .middle2_wrap {
+            margin-top: 20px;
+        }
+
+        .middle2_left {
+            margin-top: 133px;
+            float: left;
+        }
+
+        .middle2_right {
+            background: url("img/phone.png") no-repeat;
+            float: right;
+            width: 444px;
+            height: 380px;
+            margin-left: 180px;
+        }
+
+        .middle3_wrap {
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+
+        .middle3_left {
+            float: left;
+            margin-top: 36px;
+        }
+
+        .middle3_right {
+            background: url("img/save_radio.png") no-repeat;
+            float: right;
+            width: 444px;
+            height: 263px;
+            margin-left: 180px;
+        }
+
+        .middle4_wrap {
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+
+        .middle4_left {
+            background: url("img/size.png") no-repeat;
+            width: 575px;
+            height: 228px;
+            float: left;
+        }
+
+        .middle4_right {
+            float: right;
+            margin-top: 19px;
+            margin-left: 150px;
+        }
+
+        @media (max-width: 1381px) {
+            .middle0_wrap {
+                margin-top: 20px;
+            }
+
+            .middle0_right {
+                clear: both;
+                margin-top: 60px;
+                margin-left: 0px;
+                margin-right: 70px;
+            }
+
+            .middle1_right {
+                clear: both;
+                margin-top: 60px;
+                margin-left: 0px;
+            }
+
+            .middle2_left {
+                margin-top: 20px;
+            }
+
+            .middle2_right {
+                clear: both;
+                margin-left: 0px;
+                margin-top: 60px;
+            }
+
+            .middle3_left {
+                float: left;
+                margin-top: 0px;
+            }
+
+            .middle3_right {
+                clear: both;
+                margin-left: 0px;
+                margin-top: 60px;
+            }
+
+            .middle4_right {
+                clear: both;
+                margin-left: 0px;
+                margin-top: 60px;
+                margin-right: 70px;
+            }
+        }
+
+        .green_title {
+            color: #339900;
+            padding-top: 30px;
+            height: 180px;
+            margin-bottom: 0px;
+            line-height: 1.8;
+        }
+
+        .green_body {
+            background: url("img/green.png") no-repeat;
+            background-size: cover;
+        }
+
+        .green_detail {
+            color: #ffffff;
+            height: 240px;
+            margin-top: 34%;
+            padding-top: 200px;
+            line-height: 1.6;
+        }
+
+        .green_one {
+            background: url("img/green_one.png") no-repeat top center;
+        }
+
+        .green_two {
+            background: url("img/green_two.png") no-repeat top center;
+        }
+
+        .green_three {
+            background: url("img/green_three.png") no-repeat top center;
+        }
+
+        .green_four {
+            background: url("img/green_four.png") no-repeat top center;
+        }
+
+        @media (max-width: 991px) {
+            .green_body .col-xs-6 .green_detail {
+                margin-top: 10%;
+            }
+        }
+
+        #carousel-example-generic2 .carousel-caption {
+            bottom: auto;
+        }
+
+        #carousel-example-generic2 .carousel-caption p {
+            line-height: 1.8;
+            font-size: 16px;
+            letter-spacing: 2px
+        }
+
+        .content {
+            margin-bottom: 0px;
+        }
+
+        .nav-top {
+            background: #448cca;
+            border-color: #448cca;
+        }
+
+        .nav-top h2 {
+            padding: 29px;
+            line-height: 1.4 !important;
+        }
+
+        .nav-bottomtitle {
+            background: #ffffff;
+            margin-bottom: 0px;
+        }
+
+        .nav-bottomtitle h2 {
+            color: #0099ff;
+            font-size: 28px;
+            padding: 29px 0;
+            line-height: 1.4 !important;
+        }
+
+        /*中间图*/
+        .middle_page_show{
+            max-width: 1120px ;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: middle;
+            margin:  30px 0px;
+        }
+        .middle_show {
+            display: inline-block;
+            width: 178px;
+            height: 178px;
+            margin-bottom: 10px;
+            margin-right: 4px;
+            position: relative;
+        }
+
+        .middle_show img {
+            width: 100%;
+            height: 100%;
+        }
+        .show_div{
+            width: 178px;
+            height:40px;
+            color: #ffffff;
+            background-color: rgba(0,0,0,0.7);
+            position: absolute;
+            bottom: 0px;
+            padding-top: 10px;
+            display: none;
+        }
+    </style>
 </head>
 <body>
 <header class="navbar navbar-default navbar-fixed-top header-height">
@@ -40,218 +340,271 @@
     </div>
 </header>
 <main class="content">
-    <!--面包屑导航-->
-    <nav class="navbar navbar-default nav-height">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-3 col-md-2">
-                    <h3 class="text-right nav-title">账户中心</h3>
-                </div>
-                <div class="col-xs-9 col-md-10">
-                    <ol class="breadcrumb">
-                        <li>Home</li>
-                        <li>站内消息</li>
-                        <li>未读信息</li>
-                    </ol>
+    <!--轮播图-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="img/banner_1.jpg">
+                <div class="carousel-caption">
                 </div>
             </div>
+            <div class="item">
+                <img src="img/banner_2.jpg">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/banner_3.jpg">
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <nav class="navbar navbar-default nav-top">
+        <div class="container">
+            <h2 class="text-center">
+                为商业客户提供全新的参展体验&nbsp;&nbsp;&nbsp;全国首创的一站式布展平台
+            </h2>
+        </div>
+
+    </nav>
+    <section>
+        <div class="middle_page text-center middle_page_title">
+            <h1>免费注册账户&nbsp;&nbsp;在线定制展台</h1>
+            <p>方案价格一目了然，只需轻轻一按即可下单，彻底改成企业的参展体验</p>
+        </div>
+        <div class="middle_page">
+            <div class="page_wrap middle0_wrap">
+                <div class="middle0_left">
+                </div>
+                <div class="middle0_right">
+                    <h3 class="text-left middle_title">专业的展台解决方案平台</h3>
+                    <p class="text-left">
+                        搭建高效&nbsp;&nbsp;&nbsp;设计时尚&nbsp;&nbsp;&nbsp;超高性价比 <br>
+                        轻松解决展台搭建的繁琐流程 <br>
+                        为中小企业提供一站式展台解决方案
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="middle_page">
+            <div class="page_wrap middle1_wrap">
+                <div class="middle1_left"></div>
+                <div class="middle1_right">
+                    <h3 class="text-left middle_title">在全国各大展览城市提供统一设计和质量的展台</h3>
+                    <p class="text-left">
+                        统一方案&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欧洲技术&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;标准化施工&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;品质如一
+                        <br>
+                        BEECUBIC运用ERP和大数据技术，将订单分发给各合作搭建合作伙伴。<br>
+                        他们将根据BEECUBIC的标准化施工流程和质量管理体系，为客户在中国的每 <br>
+                        一个展馆提供高品质的展台，有效节省高昂的物料运输，差旅人工的成本。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="middle_page">
+            <div class="page_wrap middle2_wrap">
+                <div class="middle2_left">
+                    <h3 class="text-left middle_title">实时汇报施工进度，不再焦虑等待</h3>
+                    <p class="text-left">
+                        通过短信SMS和邮件形式向客户汇报施工进度，<br>
+                        使客户轻松掌握展台动向。我们的客户不再需要恶劣的施工环境中 <br>
+                        焦虑等待，而是将宝贵的展前时间投入到更重要的展前准备工作中去。
+                    </p>
+                </div>
+                <div class="middle2_right">
+                </div>
+            </div>
+        </div>
+        <div class="middle_page">
+            <div class="middle_page_show">
+                <div class="middle_show">
+                    <img src="img/show1.jpg">
+                    <div class="show_div">一些描述性文字</div>
+                </div>
+                <div class="middle_show">
+                    <img src="img/show1.jpg">
+                    <div class="show_div">一些描述性文字</div>
+                </div>
+                <div class="middle_show">
+                    <img src="img/show1.jpg">
+                    <div class="show_div">一些描述性文字</div>
+                </div>
+                <div class="middle_show">
+                    <img src="img/show1.jpg">
+                    <div class="show_div">一些描述性文字</div>
+                </div>
+                <div class="middle_show">
+                    <img src="img/show1.jpg">
+                    <div class="show_div">一些描述性文字</div>
+                </div>
+                <div class="middle_show">
+                    <img src="img/show1.jpg">
+                    <div class="show_div">一些描述性文字</div>
+                </div>
+                <div class="middle_show">
+                    <img src="img/show1.jpg">
+                    <div class="show_div">一些描述性文字</div>
+                </div>
+                <div class="middle_show">
+                    <img src="img/show1.jpg">
+                    <div class="show_div">一些描述性文字</div>
+                </div>
+                <div class="middle_show">
+                    <img src="img/show1.jpg">
+                    <div class="show_div">一些描述性文字</div>
+                </div>
+                <div class="middle_show">
+                    <img src="img/show1.jpg">
+                    <div class="show_div">一些描述性文字</div>
+                </div>
+                <div class="middle_show">
+                    <img src="img/show1.jpg">
+                    <div class="show_div">一些描述性文字</div>
+                </div>
+                <div class="middle_show">
+                    <img src="img/show1.jpg">
+                    <div class="show_div">一些描述性文字</div>
+                </div>
+            </div>
+        </div>
+        <div class="middle_page">
+            <div class="page_wrap middle3_wrap">
+                <div class="middle3_left">
+                    <h3 class="text-left middle_title">
+                        超高性价比的展台 <br>
+                        为您节约每一分成本，每一秒时间
+                    </h3>
+                    <p class="text-left">
+                        BEECUBIC提供的展台全部使用欧洲进口技术材料，质量达到欧洲展览 <br>
+                        标准，充分展示企业实力与形象，吸引跟多关注，更好的提升企业的参 <br>
+                        展效果和品牌价值。 <br>
+                    </p>
+                </div>
+                <div class="middle3_right">
+                </div>
+            </div>
+        </div>
+        <div class="middle_page">
+            <div class="page_wrap middle4_wrap">
+                <div class="middle4_left"></div>
+                <div class="middle4_right">
+                    <h3 class="text-left middle_title">
+                        BEECUBIC为各种面积展台提供 <br>
+                        不同预算的解决方案。
+                    </h3>
+                    <p class="text-left">
+                        凭借多年的行业经验，Beecubic设计出了一系列适合 <br>
+                        不同大小配置的展台方案。用户可以根据企业参展需求 <br>
+                        自由选择。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <p class="lead text-center green_title">
+        绿色环保材料 <br>
+        倡导绿色展览，节能展览已经是国内各大城市的政策趋势。<br>
+        一起为环境保护出一份力吧！
+    </p>
+    <div class="container-fluid">
+        <div class="row text-center green_body">
+            <div class="col-xs-6 col-md-3">
+                <h3 class="green_detail green_one">年客户增长率</h3>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <h3 class="green_detail green_two">
+                    展台每年将在<br>我们平台完成
+                </h3>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <h3 class="green_detail green_three">
+                    搭建材料<br>循环使用
+                </h3>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <h3 class="green_detail green_four">棵大树免遭砍伐</h3>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-default nav-bottomtitle">
+        <div class="container">
+            <h2 class="text-center">从一个材料部件到完美的展台，Beecubic致力于提供全新模式的展览搭建平台。</h2>
         </div>
     </nav>
-    <div class="container">
-        <div class="row">
-            <!--边栏-->
-            <div class="col-xs-3 col-md-2 text-right side_left">
-                <dl>
-                    <dt><i class="side_ico ico_log"></i>注册资料</dt>
-                    <dd><a href="infor.html">公司信息</a></dd>
-                    <dd><a href="inforChange.html">信息修改</a></dd>
-                </dl>
-                <dl>
-                    <dt><i class="side_ico ico_count"></i>资金账户</dt>
-                    <dd><a href="recharge.html">充值记录</a></dd>
-                    <dd><a href="#">账户充值</a></dd>
-                </dl>
-                <dl>
-                    <dt><i class="side_ico ico_record"></i>交易记录</dt>
-                    <dd><a href="#">订单管理</a></dd>
-                </dl>
-                <dl>
-                    <dt><i class="side_ico ico_fav"></i>方案收藏</dt>
-                    <dd><a href="collect.html">收藏管理</a></dd>
-                </dl>
-                <dl>
-                    <dt><i class="side_ico ico_mes"></i>站内消息</dt>
-                    <dd><a href="index.html" class="active">未读消息</a></dd>
-                    <dd><a href="#">全部消息</a></dd>
-                    <dd><a href="#">已读消息</a></dd>
-                    <dd><a href="#">我的留言</a></dd>
-                </dl>
+    <!--轮播图2-->
+    <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="img/bottom_1.jpg">
+                <div class="carousel-caption">
+                    <p>
+                        “20年来，中国展会搭建业从未有过任何改变。在21世纪的今天，每位参展商则更加关注展览的效率和质量的可靠。<br>
+                        Beecubic将传统连接上了互联网技术，利用高新材料打造全新的布展模式，<br>
+                        将这一传统行业进行了革命性的模式突破。“ <br>
+                        -All-MARKTING- <br>
+                        互联网媒体
+                    </p>
+                </div>
             </div>
-            <div class="col-xs-9 col-md-10">
-                <div class="side_right">
-                    <h4 class="side_right_title">未读消息</h4>
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">全部信息</a></li>
-                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">其他类型</a></li>
-                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">其他类型</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="home">
-                            <table class="table">
-                                <thead>
-                                <tr class="active">
-                                    <th width="6%">
-                                        <label>
-                                            <input type="checkbox">
-                                        </label>
-                                    </th>
-                                    <th>标题内容</th>
-                                    <th width="20%">提交时间</th>
-                                    <th width="20%">类型</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">
-                                        <label>
-                                            <input type="checkbox">
-                                        </label>
-                                    </th>
-                                    <td><a href="#">您在京东还有待评价的商品哦，发表商品评价即可得京豆！</a></td>
-                                    <td>2017-5-25 15:28:21</td>
-                                    <td>活动消息-优惠活动</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <label>
-                                            <input type="checkbox">
-                                        </label>
-                                    </th>
-                                    <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
-                                    <td>2017-5-25 15:28:21</td>
-                                    <td>活动消息-优惠活动</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <label>
-                                            <input type="checkbox">
-                                        </label>
-                                    </th>
-                                    <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
-                                    <td>2017-5-25 15:28:21</td>
-                                    <td>活动消息-优惠活动</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <label>
-                                            <input type="checkbox">
-                                        </label>
-                                    </th>
-                                    <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
-                                    <td>2017-5-25 15:28:21</td>
-                                    <td>活动消息-优惠活动</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <label>
-                                            <input type="checkbox">
-                                        </label>
-                                    </th>
-                                    <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
-                                    <td>2017-5-25 15:28:21</td>
-                                    <td>活动消息-优惠活动</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <label>
-                                            <input type="checkbox">
-                                        </label>
-                                    </th>
-                                    <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
-                                    <td>2017-5-25 15:28:21</td>
-                                    <td>活动消息-优惠活动</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <label>
-                                            <input type="checkbox">
-                                        </label>
-                                    </th>
-                                    <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
-                                    <td>2017-5-25 15:28:21</td>
-                                    <td>活动消息-优惠活动</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <label>
-                                            <input type="checkbox">
-                                        </label>
-                                    </th>
-                                    <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
-                                    <td>2017-5-25 15:28:21</td>
-                                    <td>活动消息-优惠活动</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <label>
-                                            <input type="checkbox">
-                                        </label>
-                                    </th>
-                                    <td><a href="#">送上真诚祝福 生日好礼等待您</a></td>
-                                    <td>2017-5-25 15:28:21</td>
-                                    <td>活动消息-优惠活动</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <label>
-                                            <input type="checkbox">
-                                        </label>
-                                    </th>
-                                    <td><a href="#">您的京东2017年4月月度账单 欢迎点击查看</a></td>
-                                    <td>2017-5-25 15:28:21</td>
-                                    <td>活动消息-优惠活动</td>
-                                </tr>
-                                </tbody>
-                                <tfoot>
-                                <tr>
-                                    <th scope="row">
-                                        <label>
-                                            <input type="checkbox">
-                                        </label>
-                                    </th>
-                                    <td colspan="3">
-                                        <button class="btn btn-default btn-xs" type="button" disabled="disabled">删除</button>
-                                        <button class="btn btn-default btn-xs" type="button" disabled="disabled">标记已读</button>
-                                        <button class="btn btn-default btn-xs" type="button">全部已读</button>
-                                    </td>
-                                </tr>
-                                </tfoot>
-                            </table>
-                            <nav id="pagelist">
-                                <span>共有&nbsp;10&nbsp;条，每页显示:&nbsp;10&nbsp;条</span>
-                                <div class="laypage_main laypageskin_default pull-right" id="laypage_0">
-                                    <span class="laypage_curr">1</span>
-                                    <a href="javascript:;" data-page="2">2</a>
-                                    <a href="javascript:;" data-page="3">3</a>
-                                    <a href="javascript:;" data-page="4">4</a>
-                                    <a href="javascript:;" data-page="5">5</a>
-                                    <a href="javascript:;" data-page="6">6</a>
-                                    <a href="javascript:;" data-page="7">7</a>
-                                    <span>…</span>
-                                    <a href="javascript:;" class="laypage_last" title="尾页" data-page="230">尾页</a>
-                                    <a href="javascript:;" class="laypage_next" data-page="2">下一页</a></div>
-                            </nav>
-                        </div>
-                        <div role="tabpanel" class="tab-pane" id="profile">
-                            ...
-                        </div>
-                        <div role="tabpanel" class="tab-pane" id="messages">
-                            ...
-                        </div>
-                    </div>
+            <div class="item">
+                <img src="img/bottom_1.jpg">
+                <div class="carousel-caption">
+                    <p>
+                        “20年来，中国展会搭建业从未有过任何改变。在21世纪的今天，每位参展商则更加关注展览的效率和质量的可靠。<br>
+                        Beecubic将传统连接上了互联网技术，利用高新材料打造全新的布展模式，<br>
+                        将这一传统行业进行了革命性的模式突破。“ <br>
+                        -All-MARKTING- <br>
+                        互联网媒体
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/bottom_1.jpg">
+                <div class="carousel-caption">
+                    <p>
+                        “20年来，中国展会搭建业从未有过任何改变。在21世纪的今天，每位参展商则更加关注展览的效率和质量的可靠。<br>
+                        Beecubic将传统连接上了互联网技术，利用高新材料打造全新的布展模式，<br>
+                        将这一传统行业进行了革命性的模式突破。“ <br>
+                        -All-MARKTING- <br>
+                        互联网媒体
+                    </p>
                 </div>
             </div>
         </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 </main>
 <footer>
@@ -307,5 +660,27 @@
         </div>
     </nav>
 </footer>
+<script>
+    $(document).ready(function () {
+        $(".carousel-inner").height($(window).height() - 110);
+        $(".green_body").height($(window).height() - 110);
+        $("#carousel-example-generic2 .carousel-caption").css("top", ($(window).height() - 220) / 2);
+        console.log($("#carousel-example-generic2 .carousel-caption").position().top)
+
+        $(window).resize(function () {
+            $(".carousel-inner").height($(window).height() - 110);
+            $(".green_body").height($(window).height() - 110);
+            $("#carousel-example-generic2 .carousel-caption").css("top", ($(window).height() - 220) / 2);
+        });
+
+        $('.middle_show').hover(function() {
+            var _this=$(this);
+            _this.find(".show_div").css('display', 'block');
+        }, function() {
+            var _this=$(this);
+            _this.find(".show_div").css('display', 'none');
+        });
+    })
+</script>
 </body>
 </html>
