@@ -242,12 +242,21 @@
 }
 .aside-box {
     padding-left:90px;
+    clear: both;
+    margin: 10px 0;
+    overflow: hidden
 }
 .aside-img {
     float: left;
     margin-left: -90px;
     width: 80px;
     height: 80px;
+}
+.aside-tit h5 {
+    margin: 0 0 8px 0;
+}
+.ordaside {
+    padding: 20px 0;
 }
 .quantity-form {
     position: relative;
@@ -294,3 +303,14 @@
     color: #333;
     -webkit-appearance: none;
 } 
+.ordinfo {
+    font-size: 16px;
+    margin: 10px 0;
+}
+.ordinfo span {
+    padding: 0px 20px 0px 0;
+}
+.ordpic {
+    height: 310px;
+    margin: 20px 0;
+}
