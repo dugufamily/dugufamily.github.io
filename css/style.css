@@ -113,6 +113,9 @@
 /*
     内容
 */
+.content {
+    font-family: "微软眼黑",MicroSoft Yahei;
+}
 .cont-bg {
     padding: 100px 0px 30px;
     background: #448cca;
@@ -135,15 +138,22 @@
 }
 
 .countbox {
-
     /*width: 196px;*/
     height: 156px;
-
     background-color: #f7f7f7;
     position: relative;
-
 }
-
+.countbox .c-price {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    top: 60px;
+    position: relative;
+}
+.c-tit {
+    text-align: center;
+    font-size: 18px;
+}
 .countbox h4 {
     position: absolute;
     width: 100%;
@@ -182,8 +192,105 @@
     font-weight: normal;
     margin: 0;
 }
-
-.orderbox {
-    background-color: #00a0e9;
-    height: 88px;
+.sta-cen-left {
+    padding: 20px 30px;
 }
+.orderbox {
+    text-align: center;
+    background-color: #00b9ef;
+    padding: 20px 0;
+    color: #fff;
+}
+.orderlist {
+    padding: 20px 80px;
+    list-style: none;
+    text-align: right;
+}
+.orderlist li {
+    color: #666666;
+    margin: 5px 0;
+}
+.orderlist li.ordpay {
+    color:#ff6600;
+    font-weight: bold;
+}
+.orderlist li span {
+    display: inline-block;
+    width: 80px;
+}
+.orderlist li span.f18 {
+    font-size: 18px;
+}
+.order-btn-box {
+    text-align: right;
+    margin-top: 20px;
+}
+.order-btn-box .btn {
+    padding: 10px 25px;
+}
+.order-btn-box .btn:focus {
+    outline: none;
+}
+.ordbox-s {
+    border: 1px solid #fff;
+    padding: 5px 20px;
+    display: inline-block;
+}
+.cen-aside {
+    list-style: none;
+    padding: 10px;
+}
+.aside-box {
+    padding-left:90px;
+}
+.aside-img {
+    float: left;
+    margin-left: -90px;
+    width: 80px;
+    height: 80px;
+}
+.quantity-form {
+    position: relative;
+    overflow: hidden;
+    height: 28px;
+    width: 80px;
+}
+.quantity-form a.decrement,
+.quantity-form a.increment {
+    border: 1px solid #cacbcb;
+    
+    height: 26px;
+        line-height: 20px;
+    padding: 1px 0;
+    width: 20px;
+    text-align: center;
+    color: #666;
+    margin: 0;
+    background: #fff;
+    text-decoration: none;
+}
+.quantity-form .increment {
+    float: right;
+    border: 1px solid #cacbcb;
+    border-left: 0;
+    color: #666;
+}
+.quantity-form .decrement {
+    float: left;
+}
+.quantity-form .itxt {
+    position: absolute;
+    left: 17px;
+    top: 0;
+    border: 1px solid #cacbcb;
+    width: 44px;
+    height: 26px;
+    line-height: 24px;
+    text-align: center;
+    padding: 1px;
+    margin: 0;
+    font-size: 12px;
+    font-family: verdana;
+    color: #333;
+    -webkit-appearance: none;
+} 

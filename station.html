@@ -98,16 +98,16 @@
        
                     <div class="col-md-6">
                         <div class="row">
-                            <p class="clearfix text-center">账户预览</p>
+                            <p class="clearfix c-tit">账户预览</p>
                             <div class="col-md-6">
                                 <div class="countbox">
-                                    20000.00
+                                    <p class="c-price">20000.00</p>
                                     <h4>充值</h4>                            
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="countbox">
-                                    20000.00
+                                    <p class="c-price">20000.00</p>
                                     <h4>订单支付将优先使用奖励金额</h4>                            
                                 </div>
                             </div>
@@ -115,10 +115,10 @@
                     </div>
                     <div class="col-md-6">
                         <div class="row">
-                            <p class="clearfix text-center">订单价格预估</p>
+                            <p class="clearfix  c-tit">订单价格预估</p>
                             <div class="col-md-5">
                                 <div class="countbox">
-                                    20000.00
+                                    <p class="c-price">20000.00</p>
                                     <h4>订单支付将优先使用奖励金额</h4>                            
                                 </div>
                             </div>                                        
@@ -127,7 +127,7 @@
                             </div>
                             <div class="col-md-5">
                                 <div class="countbox">
-                                    20000.00
+                                    <p class="c-price">20000.00</p>
                                     <h4>什么是场馆押金？</h4>                            
                                 </div>
                             </div> 
@@ -144,25 +144,25 @@
                         <p>Beecubic    订单编号：XXXXXXXXXXXX 城市</p>
                         <div class="orderbox">
                             <h4>您可以选择不同的美工方案</h4>
-                            <p>标准美工方案 升级全美工方案</p>
+                            <p><span class="ordbox-s">标准美工方案</span> <span class="ordbox-s">升级全美工方案</span></p>
                         </div>
                         <p>额外附加展具（根据实际需求增订展具，亲注意展台实际空间大小）：</p>
                         <div class="orderbox">
                             <h4>还希望更完美吗？</h4>
-                            <p style="font-size:12px;color:#fff">第三方专业平面设计师，为贵公司的展台提供定制美工设计服务！</p>
-                            <p>2000元/展台起  立即抢购</p>
+                            <p class="f12">第三方专业平面设计师，为贵公司的展台提供定制美工设计服务！</p>
+                            <p><span class="ordbox-s">2000元/展台起  立即抢购</span></p>
                         </div> 
-                        <ul>
-                            <li>展台搭建费金额： ￥ 00000</li>
-                            <li>平台服务费：       ￥ 00000</li>
-                            <li>额外订购金额：    ￥ 00000</li>
-                            <li>税前总额：          ￥ 00000</li>
-                            <li>VAT 6%：           ￥ 00000</li>
-                            <li>押金：                ￥ 00000</li>
-                            <li>应付总额：          ￥ 00000</li>
+                        <ul class="orderlist">
+                            <li>展台搭建费金额：<span>￥ 00000</span></li>
+                            <li>平台服务费：<span>￥ 00000</span></li>
+                            <li>额外订购金额：<span>￥ 00000</span></li>
+                            <li>税前总额：<span>￥ 00000</span></li>
+                            <li>VAT 6%：<span>￥ 00000</span></li>
+                            <li>押金：<span>￥ 00000</span></li>
+                            <li class="ordpay">应付总额：<span class="f18">￥ 00000</span></li>
                         </ul>                       
                     </div>
-                    <div>
+                    <div class="order-btn-box">
                         <button class="btn btn-primary">下单并支付</button>
                         <button class="btn btn-default">收藏</button>
                     </div>
@@ -172,6 +172,68 @@
                 <div class="row">
                     <div class="sta-cen-right">
                         <h3 class="cen-tit">您可以在此选择附加展具</h3>
+                        <ul class="cen-aside">
+                            <li class="aside-box">
+                                <img src="" alt="" class="aside-img">
+                                <div class="aside-tit">
+                                    <h5>名称：附加展具</h5>
+                                    <p>价格：<span>￥300.00</span></p>
+                                    <div class="quantity-form">
+                                        <a href="javascript:void(0);" class="decrement">-</a>
+                                        <input autocomplete="off" type="text" class="itxt" value="1" minnum="1">
+                                        <a href="javascript:void(0);" class="increment">+</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="aside-box">
+                                <img src="" alt="" class="aside-img">
+                                <div class="aside-tit">
+                                    <h5>名称：附加展具具</h5>
+                                    <p>价格：<span>￥300.00</span></p>
+                                    <div class="quantity-form">
+                                        <a href="javascript:void(0);" class="decrement">-</a>
+                                        <input autocomplete="off" type="text" class="itxt" value="1" minnum="1">
+                                        <a href="javascript:void(0);" class="increment">+</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="aside-box">
+                                <img src="" alt="" class="aside-img">
+                                <div class="aside-tit">
+                                    <h5>名称：附加展具附加展具</h5>
+                                    <p>价格：<span>￥300.00</span></p>
+                                    <div class="quantity-form">
+                                        <a href="javascript:void(0);" class="decrement">-</a>
+                                        <input autocomplete="off" type="text" class="itxt" value="1" minnum="1">
+                                        <a href="javascript:void(0);" class="increment">+</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="aside-box">
+                                <img src="" alt="" class="aside-img">
+                                <div class="aside-tit">
+                                    <h5>名称：附加展具附加展具附加展具</h5>
+                                    <p>价格：<span>￥300.00</span></p>
+                                    <div class="quantity-form">
+                                        <a href="javascript:void(0);" class="decrement">-</a>
+                                        <input autocomplete="off" type="text" class="itxt" value="1" minnum="1">
+                                        <a href="javascript:void(0);" class="increment">+</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="aside-box">
+                                <img src="" alt="" class="aside-img">
+                                <div class="aside-tit">
+                                    <h5>名称：附加具展具</h5>
+                                    <p>价格：<span>￥300.00</span></p>
+                                    <div class="quantity-form">
+                                        <a href="javascript:void(0);" class="decrement">-</a>
+                                        <input autocomplete="off" type="text" class="itxt" value="1" minnum="1">
+                                        <a href="javascript:void(0);" class="increment">+</a>
+                                    </div>
+                                </div>
+                            </li>                                                                                                                
+                        </ul>
                     </div>
                 </div>
             </div>
