@@ -152,54 +152,59 @@ li a.type_active, li a.style_active {
     color: #ffffff;
 }
 
-.collect_list{
+.collect_list {
     overflow: hidden;
 }
 
-.collect_list li{
+.collect_list li {
     float: left;
     margin-bottom: 18px;
     margin-right: 14px;
     width: 140px;
 }
-.collect_img{
+
+.collect_img {
     margin-bottom: 10px;
 }
 
-.collect_img img{
+.collect_img img {
     width: 140px;
     height: 100px;
     border: 1px solid #e5e9ee;
 }
 
-.collect_title{
+.collect_title {
     height: 24px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.collect_title a{
-    color:#3c3c3c;
+
+.collect_title a {
+    color: #3c3c3c;
     text-decoration: none;
 }
-.collect_body{
+
+.collect_body {
     line-height: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.collect_pay{
+
+.collect_pay {
     display: inline-block;
     color: #ff4400;
     margin-right: 2px;
 }
-.collect_cost{
+
+.collect_cost {
     display: inline-block;
     color: #9c9c9c;
     text-decoration: line-through;
 }
 
-.collect_type{
+.collect_type {
     display: inline-block;
     color: #ffffff;
     border-radius: 50%;
@@ -208,15 +213,174 @@ li a.type_active, li a.style_active {
     font-weight: bold;
     margin-right: 2px;
 }
-.type_c{
+
+.type_c {
     background: #f9b800;
 }
-.type_b{
+
+.type_b {
     background: #ea2e23;
 }
-.type_j{
+
+.type_j {
     background: #15c3b4;
 }
-.cash_padding{
+
+.cash_padding {
     padding-right: 2px;
+}
+
+/*订单*/
+.navbar-order {
+    border: none;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.input-group-padding-top {
+    padding-top: 2px;
+}
+
+.order-search {
+    color: #555555;
+}
+
+.order-nav {
+    overflow: hidden;
+}
+
+.order-nav-ul {
+    float: left;
+    border: none;
+}
+
+.order-nav .order-nav-ul li a, .order-nav .order-nav-ul li:hover a, .order-nav .order-nav-ul li:focus a {
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.order-nav .order-nav-ul li.active a, .order-nav .order-nav-ul li.active:hover a, .order-nav .order-nav-ul li.active:focus a {
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.navbar-order-listhead {
+    display: inline-block;
+    padding: 15px;
+    color: #777777;
+    text-align: center;
+}
+
+.order-nav-table {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.space-table {
+    height: 20px;
+}
+
+.order-nav-table tbody td {
+    border: 1px solid #e5e5e5;
+}
+
+.order-nav-table tbody .tr-th {
+    background: #f5f5f5;
+    height: 31px;
+    line-height: 31px;
+    color: #aaa;
+    overflow: hidden;
+}
+
+.order-nav-table tbody .tr-th td {
+    border-bottom-color: #f5f5f5;
+}
+
+.dealtime {
+    padding-left: 15px;
+    width: 180px;
+    text-align: left;
+}
+
+.dealnumber {
+    width: 300px;
+    text-align: left;
+}
+
+.dealnumber a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.order-nav-table tbody .tr-bd td {
+    padding: 14px 0px;
+}
+
+.status {
+    line-height: 22px;
+}
+
+.order-status {
+    color: #aaaaaa;
+}
+
+.order-del {
+    margin-right: 15px;
+    color: #aaaaaa;
+    display: none;
+}
+
+tbody:hover .order-del {
+    display: inline-block;
+}
+
+.amount {
+    color: #aaaaaa;
+}
+
+.amount_way {
+    display: block;
+    margin: 0 8px;
+    margin-top: 5px;
+    padding-top: 1px;
+    border-top: solid 1px #E5E5E5;
+    line-height: 19px;
+    height: 19px;
+    overflow: hidden;
+}
+
+.p-img {
+    float: left;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #efefef;
+    margin: 0 14px;
+}
+
+.p-img img {
+    width: 58px;
+    height: 58px;
+}
+
+.p-name {
+    float: left;
+    text-align: left;
+    width: 92px;
+}
+.p-name span{
+    display: inline-block;
+    margin-bottom: 2px;
+}
+.p-price{
+    float: left;
+    text-align: left;
+
+}
+.p-price span{
+    display: inline-block;
+    margin-bottom: 2px;
 }
